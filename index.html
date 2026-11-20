@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض Crazy Car للسيارات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل (Nav Bar) -->
+    <nav class="navbar">
+        <div class="logo">Crazy Car <span>🚗</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#cars">أقسام السيارات</a></li>
+            <li><a href="#gallery">معرض الصور</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- الهيدر/الرئيسية -->
+    <header id="home" class="hero">
+        <h1>مرحباً بكم في معرض <span>Crazy Car</span></h1>
+        <p>أفضل الاختيارات والأسعار لجميع أنواع السيارات الحديثة والمعتمدة</p>
+        <a href="#cars" class="btn">استعرض السيارات</a>
+    </header>
+
+    <!-- قسم من نحن -->
+    <section id="about" class="section">
+        <h2>من نحن</h2>
+        <p>معرض <strong>Crazy Car</strong> هو وجهتك الأولى في المنوفية لتجارة واستيراد السيارات الحديثة. نقدم لك أفضل السيارات الألمانية، الأمريكية، الصينية، والمحلية بأفضل الأسعار وأنظمة السداد المتنوعة مع ضمان الجودة وتسهيل كافة إجراءات التلخيص والترخيص.</p>
+    </section>
+
+    <!-- قسم السيارات وحسب الجنسيات -->
+    <section id="cars" class="section gray-bg">
+        <h2>أقسام السيارات</h2>
+        
+        <!-- أزرار التصفية -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterCars('all')">الكل</button>
+            <button class="filter-btn" onclick="filterCars('german')">ألماني حديث</button>
+            <button class="filter-btn" onclick="filterCars('american')">أمريكي</button>
+            <button class="filter-btn" onclick="filterCars('egyptian')">مصر/تجميع محلي</button>
+            <button class="filter-btn" onclick="filterCars('chinese')">صيني</button>
+        </div>
+
+        <!-- كروت السيارات -->
+        <div class="cars-grid">
+
+            <!-- سيارة ألماني -->
+            <div class="car-card german">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=500" alt="Mercedes C-Class">
+                <h3>مرسيدس C200 موديل 2024</h3>
+                <span class="badge">ألماني</span>
+                <p class="price">السعر: 3,400,000 ج.م</p>
+                <a href="https://wa.me/201500104599" class="whatsapp-btn" target="_blank">تواصل عبر الواتساب</a>
+            </div>
+
+            <div class="car-card german">
+                <img src="https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=500" alt="BMW 5 Series">
+                <h3>بي إم دبليو G30 موديل 2023</h3>
+                <span class="badge">ألماني</span>
+                <p class="price">السعر: 3,100,000 ج.م</p>
+                <a href="https://wa.me/201500104599" class="whatsapp-btn" target="_blank">تواصل عبر الواتساب</a>
+            </div>
+
+            <!-- سيارة أمريكي -->
+            <div class="car-card american">
+                <img src="https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?w=500" alt="Ford Mustang">
+                <h3>فورد موستانج 2023</h3>
+                <span class="badge">أمريكي</span>
+                <p class="price">السعر: 2,800,000 ج.م</p>
+                <a href="https://wa.me/201500104599" class="whatsapp-btn" target="_blank">تواصل عبر الواتساب</a>
+            </div>
+
+            <!-- سيارة تجميع محلي/مصري -->
+            <div class="car-card egyptian">
+                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=500" alt="Nissan Sunny">
+                <h3>نيسان صني 2024 (تجميع محلي)</h3>
+                <span class="badge">مصر</span>
+                <p class="price">السعر: 695,000 ج.م</p>
+                <a href="https://wa.me/201500104599" class="whatsapp-btn" target="_blank">تواصل عبر الواتساب</a>
+            </div>
+
+            <!-- سيارة صيني -->
+            <div class="car-card chinese">
+                <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=500" alt="MG GT">
+                <h3>إم جي GT موديل 2024</h3>
+                <span class="badge">صيني</span>
+                <p class="price">السعر: 1,050,000 ج.م</p>
+                <a href="https://wa.me/201500104599" class="whatsapp-btn" target="_blank">تواصل عبر الواتساب</a>
+            </div>
+
+            <div class="car-card chinese">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500" alt="Chery Tiggo">
+                <h3>شيري تيجو 7 موديل 2024</h3>
+                <span class="badge">صيني</span>
+                <p class="price">السعر: 990,000 ج.م</p>
+                <a href="https://wa.me/201500104599" class="whatsapp-btn" target="_blank">تواصل عبر الواتساب</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- صور المعرض -->
+    <section id="gallery" class="section">
+        <h2>صور المعرض</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=500" alt="معرض السيارات">
+            <img src="https://images.unsplash.com/photo-1508974239320-0a029497e820?w=500" alt="صالة العرض">
+            <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=500" alt="سيارات المعرض">
+        </div>
+    </section>
+
+    <!-- منطقة اتصل بنا والمعلومات -->
+    <section id="contact" class="section gray-bg">
+        <h2>اتصل بنا وموقعنا</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <p>📍 <strong>العنوان:</strong> قرية أبو عوالي - مركز أشمون - محافظة المنوفية</p>
+                <p>📞 <strong>الهاتف / الواتساب:</strong> 01500104599</p>
+                <p>⏰ <strong>مواعيد العمل:</strong> يومياً من 10 صباحاً حتى 10 مساءً</p>
+            </div>
+            
+            <div class="contact-links">
+                <a href="tel:01500104599" class="btn shadow">اتصال تلفزيوني مباشر</a>
+                <a href="https://wa.me/201500104599" target="_blank" class="btn whatsapp-main">مراسلة عبر واتساب</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - معرض Crazy Car للسيارات</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
